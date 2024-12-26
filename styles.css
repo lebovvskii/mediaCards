@@ -1,0 +1,138 @@
+body {
+  font-family: 'Open Sans', serif;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-align: center;
+  margin-top: 58px;
+  margin-bottom: 45px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 11px;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 2px solid #141416;
+  border-radius: 10px;
+  padding: 12px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.link__icon {
+  width: 18px;
+}
+
+.cards {
+  display: flex;
+  justify-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.card {
+  background-color: white;
+  width: 200px;
+  height: 287px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 27.69px 8.39px 41.96px 0px #c7c7c799;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cards__container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 28px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card__image {
+  background-image: url('/assets/images/background.jpg');
+  height: 180px;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 14px;
+  position: relative;
+}
+
+.time__chip {
+  background: #1c1d2059;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: white;
+  display: inline;
+  border-radius: 5px;
+
+  top: 10px;
+  right: 6px;
+  position: absolute;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 11px;
+}
+
+.price__icon {
+  height: 15px;
+}
+
+.card__body--left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.button {
+  padding: 11px 18px;
+  background-color: #141416;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
